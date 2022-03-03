@@ -18,6 +18,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script>dataLayer = [];</script>
 	</head>
 	<body class="homepage is-preload">
 		
@@ -104,8 +105,8 @@
 							</div>
 							<footer>
 								<ul class="actions">
-									<li><a href="#" class="button large">Get Started</a></li>
-									<li><a href="#" class="button alt large">Learn More</a></li>
+									<li><a href="#" class="button large" onclick="dataLayer.push({'acao': 'comecar'});">Get Started</a></li>
+									<li><a href="#" class="button alt large" onclick="dataLayer.push({'acao': 'ver mais detalhes'});">Learn More</a></li>
 								</ul>
 							</footer>
 						</section>
