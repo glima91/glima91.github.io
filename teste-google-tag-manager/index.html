@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+
+    <script>
+        var dataLayer = [];
+        // Adiciona Custom Dimension de sessão usando dataLayer
+
+        var date = new Date();
+        var dayperiod = (date.getHours() < 12) ? 'manhã': 'tarde'; 
+        dataLayer.push({'dayperiod': dayperiod});
+
+        // Adiciona Custom Metric de sessão usando dataLayer
+
+        var grade = date.getHours();
+        dataLayer.push({'grade': grade});
+
+    </script>
+
 	<!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
